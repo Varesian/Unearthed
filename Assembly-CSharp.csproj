@@ -76,6 +76,10 @@
      <Compile Include="Assets\Scripts\UnityUtils\RespawnIfFalls.cs" />
      <None Include="Assets\Scripts\UnityOpenNI\changes.txt" />
      <None Include="Assets\Notes\KinectNotes.txt" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
  <Reference Include="OpenNI.Net">
  <HintPath>Assets\Libraries\OpenNI.Net.dll</HintPath>
  </Reference>
@@ -85,6 +89,10 @@
  <Reference Include="XnVNITE.net_1_3_1">
  <HintPath>Assets\Libraries\XnVNITE.net_1_3_1.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{74239698-3AC4-05CB-76CE-A0249F5344EC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

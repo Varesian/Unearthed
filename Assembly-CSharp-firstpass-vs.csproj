@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{2C1D8B52-3E78-D2F3-5932-248C292F8EE2}</ProjectGuid>
+	<ProjectGuid>{74239698-3AC4-05CB-76CE-A0249F5344EC}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,36 +44,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\ColliderCoordinates.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\ColliderGroup.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\PointCloud.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\PointCloudCamera.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\PointCloudCollider.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\PointCloudCollisionToUnityCollision.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\PointCloudFadingCollider.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITEControl.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITECursor.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITECursorVisualizer.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITEGUI.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITEHandPointCursor.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITESessionManager.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITESoftbar.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\NITESoftbarVisualizer.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIContext.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIDepthmapViewer.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIImagemapViewer.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIMultipleSkeletonController.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNISingleSkeletonController.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNISkeleton.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUserTracker.cs" />
-     <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUsersRadar.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\ApplyRandomForce.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\ArrayMaker.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\ColorMorpher.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\OnCollisionColorChange.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\OnCollisionTurnOnParticles.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\RespawnIfFalls.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Sources\Scripts\Water.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\Displace.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\WaterTile.cs" />
      <None Include="Assets\Scripts\UnityOpenNI\changes.txt" />
      <None Include="Assets\Notes\KinectNotes.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
@@ -89,10 +67,6 @@
  <Reference Include="XnVNITE.net_1_3_1">
  <HintPath>Assets\Libraries\XnVNITE.net_1_3_1.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{74239698-3AC4-05CB-76CE-A0249F5344EC}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
