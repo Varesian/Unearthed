@@ -13,6 +13,10 @@ public class PointCloudCollisionToUnityCollision : MonoBehaviour {
 	}
 	
 	void OnPointCloudCollisionEnter() {
-		oCCC.Collide ();
+		Debug.Log("I got a collision", this);
+		//oCCC.Collide ();
+	}
+	
+	void OnPointCloudCollisionExit() {
 	}
 }
