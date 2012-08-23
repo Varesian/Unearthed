@@ -68,6 +68,9 @@
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNISkeleton.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUserTracker.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUsersRadar.cs" />
+     <Compile Include="Assets\Scripts\UnityParticleScripts\AttractParticlesByDistance.cs" />
+     <Compile Include="Assets\Scripts\UnityParticleScripts\ParticleAttractor.cs" />
+     <Compile Include="Assets\Scripts\UnityParticleScripts\ParticlePositionRandomizer.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ApplyRandomForce.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ArrayMaker.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ColorMorpher.cs" />
