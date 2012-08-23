@@ -50,7 +50,6 @@
      <Compile Include="Assets\Scripts\PointCloud\PointCloud.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCamera.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCollider.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\PointCloudCollisionToUnityCollision.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudFadingCollider.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITEControl.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITECursor.cs" />
@@ -69,6 +68,7 @@
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUserTracker.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUsersRadar.cs" />
      <Compile Include="Assets\Scripts\UnityParticleScripts\AttractParticlesByDistance.cs" />
+     <Compile Include="Assets\Scripts\UnityParticleScripts\DuringCollisionEmitParticles.cs" />
      <Compile Include="Assets\Scripts\UnityParticleScripts\ParticleAttractor.cs" />
      <Compile Include="Assets\Scripts\UnityParticleScripts\ParticlePositionRandomizer.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ApplyRandomForce.cs" />
@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\UnityUtils\OnCollisionTurnOnParticles.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\RespawnIfFalls.cs" />
      <None Include="Assets\Scripts\UnityOpenNI\changes.txt" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Notes\KinectNotes.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
@@ -96,6 +97,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{74239698-3AC4-05CB-76CE-A0249F5344EC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{936A46DC-EF16-9BBC-CAD3-26C6886F439E}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

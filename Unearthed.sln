@@ -7,6 +7,8 @@ Project("{80EE0882-115D-7E58-B6DA-61918EBCB696}") = "Unearthed", "Assembly-CShar
 EndProject
 Project("{80EE0882-115D-7E58-B6DA-61918EBCB696}") = "Unearthed", "Assembly-CSharp-Editor-firstpass.csproj", "{66D33F07-3AEC-4862-3159-F413961B82ED}"
 EndProject
+Project("{80EE0882-115D-7E58-B6DA-61918EBCB696}") = "Unearthed", "Assembly-UnityScript-firstpass.unityproj", "{936A46DC-EF16-9BBC-CAD3-26C6886F439E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{66D33F07-3AEC-4862-3159-F413961B82ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D33F07-3AEC-4862-3159-F413961B82ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D33F07-3AEC-4862-3159-F413961B82ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936A46DC-EF16-9BBC-CAD3-26C6886F439E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936A46DC-EF16-9BBC-CAD3-26C6886F439E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936A46DC-EF16-9BBC-CAD3-26C6886F439E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936A46DC-EF16-9BBC-CAD3-26C6886F439E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-								GlobalSection(MonoDevelopProperties) = preSolution
+											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
