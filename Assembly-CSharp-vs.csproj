@@ -47,7 +47,6 @@
      <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderCoordinates.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderGroup.cs" />
-     <Compile Include="Assets\Scripts\PointCloud\DebugPointCloudCollider.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloud.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCamera.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCollider.cs" />

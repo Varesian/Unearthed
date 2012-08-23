@@ -12,7 +12,8 @@ public class PointCloudCollider : MonoBehaviour {
 	void Start () {
 	}
 	
-	void Update () {
+
+	void Update() {
 		Vector3[] points = pointCloud.Points;
 		int numPoints = pointCloud.NumPoints;
 		
@@ -25,10 +26,10 @@ public class PointCloudCollider : MonoBehaviour {
 			}
 		}
 		if (!isCollided && collisionFound) {
-			gameObject.SendMessage("PointCloudCollisionEnter");
+			gameObject.SendMessage("OnPointCloudCollisionEnter");
 			isCollided = true;
 		} else if (isCollided && !collisionFound) {
-			gameObject.SendMessage("PointCloudCollisionExit");
+			gameObject.SendMessage("OnPointCloudCollisionExit");
 			isCollided = false;
 		}
 	}
