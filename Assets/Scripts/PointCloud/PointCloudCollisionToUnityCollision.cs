@@ -14,9 +14,11 @@ public class PointCloudCollisionToUnityCollision : MonoBehaviour {
 	
 	void OnPointCloudCollisionEnter() {
 		Debug.Log("I got a collision", this);
+		renderer.material.color = Color.red;
 		//oCCC.Collide ();
 	}
 	
 	void OnPointCloudCollisionExit() {
+		renderer.material.color = Color.blue;
 	}
 }
