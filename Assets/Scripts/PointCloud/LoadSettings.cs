@@ -3,6 +3,97 @@ using System.Collections;
 using System.Xml;
 using System.IO;
 
+public class LoadSettings : MonoBehaviour
+{
+    public string xmlFilename;
+    public GameObject cameraObject;
+    public GameObject cloudObject;
+
+    public void Load() 
+    {
+	string path = xmlFilename;
+	if (!File.Exists(path)) return;
+		
+	XmlTextReader textReader = new XmlTextReader(path);
+	ScanToNode(textReader, "Camera");
+	ReadTransform(textReader, cameraObject);
+	ScanToNode(textReader, "PointCloud");
+	ReadTransform(textReader, cloudObject);
+    }
+
+    void ReadTransform(XmlTextReader textReader, GameObject go) {
+	ScanToNode(textReader, "Transform");
+	ReadPosition(textReader, go);
+	ReadRotation(textReader, go);
+	ReadScale(textReader, go);
+    }
+
+    void ReadPosition(XmlTextReader textReader, GameObject go) {
+	ScanToNode(textReader, "Position");
+	ScanToNode(textReader, "X");
+	float x, y, z;
+	x = GetFloat(textReader);
+	ScanToNode(textReader, "Y");
+	y = GetFloat(textReader);
+	ScanToNode(textReader, "Z");
+	z = GetFloat(textReader);
+	go.transform.position = new Vector3(x, y, z);
+    }
+
+    void ReadRotation(XmlTextReader textReader, GameObject go) {
+	ScanToNode(textReader, "Rotation");
+	ScanToNode(textReader, "X");
+	float x, y, z;
+	x = GetFloat(textReader);
+	ScanToNode(textReader, "Y");
+	y = GetFloat(textReader);
+	ScanToNode(textReader, "Z");
+	z = GetFloat(textReader);
+	go.transform.eulerAngles = new Vector3(x, y, z);
+    }
+
+    void ReadScale(XmlTextReader textReader, GameObject go) {
+	ScanToNode(textReader, "Scale");
+	ScanToNode(textReader, "X");
+	float x, y, z;
+	x = GetFloat(textReader);
+	ScanToNode(textReader, "Y");
+	y = GetFloat(textReader);
+	ScanToNode(textReader, "Z");
+	z = GetFloat(textReader);
+	go.transform.localScale = new Vector3(x, y, z);
+    }
+
+    void ScanToNode(XmlTextReader textReader, string name) {
+	if (CheckCurrentNode(textReader, name)) return;
+	while (textReader.Read()) {
+	    if (CheckCurrentNode(textReader, name)) return;
+	}
+	Debug.Log("ERROR! Could noto find XML element named: " + name);
+    }
+
+    bool CheckCurrentNode(XmlTextReader textReader, string name) {
+	XmlNodeType nType = textReader.NodeType;
+	// if node type is an element
+	if (nType == XmlNodeType.Element) {
+	    if (textReader.Name.ToString() == name) {
+		return true;
+	    }
+	}
+	return false;
+    }
+	    
+    float GetFloat(XmlTextReader textReader) {
+	return (float) textReader.ReadElementContentAs(typeof(float), null);	    
+    }
+}
+
+/*
+using UnityEngine;
+using System.Collections;
+using System.Xml;
+using System.IO;
+
 namespace HutongGames.PlayMaker.Actions
 {
     [ActionCategory("Settings")]
@@ -111,3 +202,4 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	}
 }
+*/
