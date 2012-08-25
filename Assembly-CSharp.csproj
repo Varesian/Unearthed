@@ -48,10 +48,12 @@
      <Compile Include="Assets\Scripts\PointCloud\Calibrator.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderCoordinates.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderGroup.cs" />
+     <Compile Include="Assets\Scripts\PointCloud\LoadSettings.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloud.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCamera.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCollider.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudFadingCollider.cs" />
+     <Compile Include="Assets\Scripts\PointCloud\SaveSettings.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITEControl.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITECursor.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITECursorVisualizer.cs" />
@@ -79,10 +81,12 @@
      <Compile Include="Assets\Scripts\UnityUtils\OnCollisionTurnOnParticles.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\RespawnIfFalls.cs" />
      <None Include="Assets\Scripts\UnityOpenNI\changes.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Notes\KinectNotes.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
  <Reference Include="OpenNI.Net">
