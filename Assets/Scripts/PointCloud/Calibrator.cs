@@ -67,29 +67,29 @@ public class Calibrator : MonoBehaviour {
 	}
 	
 	void AlterScale() {
-		if (Input.GetKeyDown(KeyCode.X)) {
-			transform.position = new Vector3(transform.position.x - transformScalar,
-				transform.position.y, transform.position.z);
+		if (Input.GetKeyDown(KeyCode.Z)) {
+			transform.localScale = new Vector3(transform.localScale.x + transformScalar,
+				transform.localScale.y, transform.localScale.z);
 		}
 		if (Input.GetKeyDown(KeyCode.X)) {
-			transform.position = new Vector3(transform.position.x - transformScalar,
-				transform.position.y, transform.position.z);
+			transform.localScale = new Vector3(transform.localScale.x - transformScalar,
+				transform.localScale.y, transform.localScale.z);
 		}
 		if (Input.GetKeyDown(KeyCode.C)) {
-			transform.position = new Vector3(transform.position.x,
-				transform.position.y + transformScalar, transform.position.z);
+			transform.localScale = new Vector3(transform.localScale.x,
+				transform.localScale.y + transformScalar, transform.localScale.z);
 		}
 		if (Input.GetKeyDown(KeyCode.V)) {
-			transform.position = new Vector3(transform.position.x,
-				transform.position.y - transformScalar, transform.position.z);
+			transform.localScale = new Vector3(transform.localScale.x,
+				transform.localScale.y - transformScalar, transform.localScale.z);
 		}
 		if (Input.GetKeyDown(KeyCode.B)) {
-			transform.position = new Vector3(transform.position.x,
-				transform.position.y, transform.position.z + transformScalar);
+			transform.localScale = new Vector3(transform.localScale.x,
+				transform.localScale.y, transform.localScale.z + transformScalar);
 		}
 		if (Input.GetKeyDown(KeyCode.N)) {
-			transform.position = new Vector3(transform.position.x,
-				transform.position.y, transform.position.z - transformScalar);
+			transform.localScale = new Vector3(transform.localScale.x,
+				transform.localScale.y, transform.localScale.z - transformScalar);
 		}		
 	}
 }
