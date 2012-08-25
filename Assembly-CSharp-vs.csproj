@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
+     <Compile Include="Assets\Scripts\PointCloud\Calibrator.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderCoordinates.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderGroup.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloud.cs" />
@@ -84,6 +85,9 @@
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="OpenNI.Net">
  <HintPath>Assets\Libraries\OpenNI.Net.dll</HintPath>
  </Reference>
