@@ -6,8 +6,21 @@ using System.IO;
 public class LoadSettings : MonoBehaviour
 {
     public string xmlFilename;
-    public GameObject cameraObject;
+    public GameObject colliderObject;
     public GameObject cloudObject;
+    public bool doLoadColliderTransform = true;
+
+    void Start()
+    {
+	Load();
+    }
+
+    void Update()
+    {
+	if (Input.GetKeyDown(KeyCode.P)) {
+	    Load();
+	}
+    }
 
     public void Load() 
     {
@@ -15,8 +28,10 @@ public class LoadSettings : MonoBehaviour
 	if (!File.Exists(path)) return;
 		
 	XmlTextReader textReader = new XmlTextReader(path);
-	ScanToNode(textReader, "Camera");
-	ReadTransform(textReader, cameraObject);
+	ScanToNode(textReader, "Collider");
+	if (doLoadColliderTransform) {
+	    ReadTransform(textReader, colliderObject);
+	}
 	ScanToNode(textReader, "PointCloud");
 	ReadTransform(textReader, cloudObject);
     }
