@@ -46,6 +46,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
      <Compile Include="Assets\Scripts\PointCloud\Calibrator.cs" />
+     <Compile Include="Assets\Scripts\PointCloud\CameraSwitcher.cs" />
+     <Compile Include="Assets\Scripts\PointCloud\ColliderCalibrator.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderCoordinates.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderGroup.cs" />
      <Compile Include="Assets\Scripts\PointCloud\LoadSettings.cs" />

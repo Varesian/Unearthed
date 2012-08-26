@@ -6,9 +6,16 @@ using System.IO;
 public class SaveSettings : MonoBehaviour
 {
     public string xmlFilename;
-    public GameObject cameraObject;
+    public GameObject colliderObject;
     public GameObject cloudObject;
     
+    void Update()
+    {
+	if (Input.GetKeyDown(KeyCode.O)) {
+	    Save();
+	}
+    }
+
     public void Save()
     {
 	string path = xmlFilename;
@@ -18,8 +25,8 @@ public class SaveSettings : MonoBehaviour
 	{
 	    textWriter.WriteStartElement("Settings", "");
 	    {
-		go = cameraObject;
-		textWriter.WriteStartElement("Camera", "");
+		go = colliderObject;
+		textWriter.WriteStartElement("Collider", "");
 		{
 		    WriteTransform(textWriter, go);
 		}
