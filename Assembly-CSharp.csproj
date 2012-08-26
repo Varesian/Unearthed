@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\UnityUtils\ApplyRandomForce.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ArrayMaker.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ColorMorpher.cs" />
+     <Compile Include="Assets\Scripts\UnityUtils\LevelRotator.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\OnCollisionColorChange.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\OnCollisionTurnOnParticles.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\RespawnIfFalls.cs" />
