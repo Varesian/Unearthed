@@ -6,16 +6,16 @@ public class SceneSwitcher : MonoBehaviour {
     public SceneState sceneState = 0;
     public Transform water;
     public enum SceneState {
-	BillieJean = 0,
-	FireFloors,
-	WaterFloors
+		BillieJean = 0,
+		FireFloors,
+		WaterFloors
     }
 
     float lastSwitchSeconds = 0;
 
     void Start() {
-	lastSwitchSeconds = Time.timeSinceLevelLoad;
-	SetScene(sceneState);
+		lastSwitchSeconds = Time.timeSinceLevelLoad;
+		SetScene(sceneState);
     }
 
     void Update () {
@@ -46,23 +46,23 @@ public class SceneSwitcher : MonoBehaviour {
     }
 
     void ActivateBillieJean(bool turnOn) {
-	foreach (Transform t in transform) {
-	    t.renderer.enabled = turnOn;
-	}
+		foreach (Transform t in transform) {
+		    t.renderer.enabled = turnOn;
+		}
     }
 
     void ActivateFireFloors(bool turnOn) {
 	foreach (Transform t in transform) {
 	    FireProducer fp = t.GetComponent<FireProducer>() as FireProducer;
 	    if (turnOn) {
-		fp.StartFire();
+			fp.StartFire();
 	    } else {
-		fp.StopFire();
+			fp.StopFire();
 	    }
 	}
     }
 
     void ActivateWaterFloors(bool turnOn) {
-	water.renderer.enabled = turnOn;
+		water.renderer.enabled = turnOn;
     }
 }
