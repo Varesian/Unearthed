@@ -44,6 +44,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BM\FireProducer.cs" />
+     <Compile Include="Assets\Scripts\BM\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
      <Compile Include="Assets\Scripts\PointCloud\Calibrator.cs" />
      <Compile Include="Assets\Scripts\PointCloud\CameraSwitcher.cs" />
@@ -76,13 +78,16 @@
      <Compile Include="Assets\Scripts\UnityParticleScripts\DuringCollisionEmitParticles.cs" />
      <Compile Include="Assets\Scripts\UnityParticleScripts\ParticleAttractor.cs" />
      <Compile Include="Assets\Scripts\UnityParticleScripts\ParticlePositionRandomizer.cs" />
+     <Compile Include="Assets\Scripts\UnityUtils\AlphaRotator.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ApplyRandomForce.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ArrayMaker.cs" />
+     <Compile Include="Assets\Scripts\UnityUtils\AxisMover.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\ColorMorpher.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\LevelRotator.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\OnCollisionColorChange.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\OnCollisionTurnOnParticles.cs" />
      <Compile Include="Assets\Scripts\UnityUtils\RespawnIfFalls.cs" />
+     <Compile Include="Assets\Scripts\UnityUtils\ScaleMover.cs" />
      <None Include="Assets\Scripts\UnityOpenNI\changes.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
