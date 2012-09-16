@@ -6,6 +6,7 @@ public class ParticleAnimatorColorsList : MonoBehaviour {
 	public ParticleAnimatorColors[] particleAnimatorColorCycle;
 	public string startLerpKey = "L";
 	public float lerpSpeed = 0.05f;
+	public bool verbose = false;
 
 	public Color[] currentColors = new Color[5]; //DEBUG public
 	private int numPACS;
@@ -31,7 +32,7 @@ public class ParticleAnimatorColorsList : MonoBehaviour {
 			}
 			
 			lerpAmount = newLerpAmount;
-			Debug.Log ("Lerp amount: " + lerpAmount, this);
+			if (verbose) Debug.Log ("lerpAmount: " + lerpAmount, this);
 			Color[] aColsFrom = particleAnimatorColorCycle[currentPACIndex].GetAnimationColors ();
 			Color[] aColsTo = particleAnimatorColorCycle[currentPACIndex + 1].GetAnimationColors ();
 			
