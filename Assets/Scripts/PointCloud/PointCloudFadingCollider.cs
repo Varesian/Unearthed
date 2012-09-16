@@ -17,7 +17,7 @@ public class PointCloudFadingCollider : MonoBehaviour {
 	void Start () {
 		Activation = 0.0f;
 		if (pointCloud == null) {
-			Debug.Log("Point cloud is not assigned to collider.");
+			Debug.LogError("Point cloud is not assigned to collider.");
 		}
 	}
 	
