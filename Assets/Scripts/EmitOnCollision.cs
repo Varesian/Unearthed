@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class EmitOnCollision : MonoBehaviour {
-    public ParticleEmitter emitter;			
+    public ParticleEmitter emitter;		
 
     void Start() {
 		emitter.emit = false;

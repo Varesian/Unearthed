@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scripts\BM\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
      <Compile Include="Assets\Scripts\EmitOnCollision.cs" />
+     <Compile Include="Assets\Scripts\MorphParticleColors.cs" />
+     <Compile Include="Assets\Scripts\ParticleAnimatorColors.cs" />
      <Compile Include="Assets\Scripts\PointCloud\Calibrator.cs" />
      <Compile Include="Assets\Scripts\PointCloud\CameraSwitcher.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderCalibrator.cs" />
@@ -59,6 +61,7 @@
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCollider.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudFadingCollider.cs" />
      <Compile Include="Assets\Scripts\PointCloud\SaveSettings.cs" />
+     <Compile Include="Assets\Scripts\SetToExternalParticleAnimationColors.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITEControl.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITECursor.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\NITECursorVisualizer.cs" />
