@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SetToExternalParticleAnimationColors : MonoBehaviour {
 	
-	public ParticleAnimatorColors particleAnimatorColors;
+	public ParticleAnimatorColorsList particleAnimatorColorsList;
 	public ParticleAnimator particleAnimatorToChange;
 	public float minMillisecsBetweenUpdates = 0;
 	private float msUntilUpdate;
@@ -17,7 +17,7 @@ public class SetToExternalParticleAnimationColors : MonoBehaviour {
 	void Update () {
 		msUntilUpdate -= Time.deltaTime;
 		if (msUntilUpdate < 0) {
-			particleAnimatorToChange.colorAnimation = particleAnimatorColors.GetAnimationColors();
+			particleAnimatorToChange.colorAnimation = particleAnimatorColorsList.GetAnimationColors();
 			msUntilUpdate = minMillisecsBetweenUpdates;
 		}
 	}

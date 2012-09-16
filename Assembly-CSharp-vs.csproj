@@ -48,8 +48,8 @@
      <Compile Include="Assets\Scripts\BM\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
      <Compile Include="Assets\Scripts\EmitOnCollision.cs" />
-     <Compile Include="Assets\Scripts\MorphParticleColors.cs" />
      <Compile Include="Assets\Scripts\ParticleAnimatorColors.cs" />
+     <Compile Include="Assets\Scripts\ParticleAnimatorColorsList.cs" />
      <Compile Include="Assets\Scripts\PointCloud\Calibrator.cs" />
      <Compile Include="Assets\Scripts\PointCloud\CameraSwitcher.cs" />
      <Compile Include="Assets\Scripts\PointCloud\ColliderCalibrator.cs" />
