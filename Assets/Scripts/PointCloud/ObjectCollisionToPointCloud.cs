@@ -15,7 +15,7 @@ public class ObjectCollisionToPointCloud : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        print(other.name);
+        //print(other.name);
         gameObject.SendMessage("OnPointCloudCollisionEnter");
     }
     void OnTriggerExit(Collider other)
