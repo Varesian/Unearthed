@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_5_5;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_2;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\PointCloud\ColliderGroup.cs" />
      <Compile Include="Assets\Scripts\PointCloud\LoadSettings.cs" />
      <Compile Include="Assets\Scripts\PointCloud\MouseTriggersPointCloudCollision.cs" />
+     <Compile Include="Assets\Scripts\PointCloud\ObjectCollisionToPointCloud.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloud.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCamera.cs" />
      <Compile Include="Assets\Scripts\PointCloud\PointCloudCollider.cs" />

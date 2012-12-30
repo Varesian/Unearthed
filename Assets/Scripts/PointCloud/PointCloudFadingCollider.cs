@@ -12,7 +12,7 @@ public class PointCloudFadingCollider : MonoBehaviour {
 	
 	public PointCloud pointCloud;
 	
-	bool isMouseActivated = false;
+	bool isMouseActivated = true;
 	
 	void Start () {
 		Activation = 0.0f;

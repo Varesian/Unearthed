@@ -34,14 +34,16 @@ public class PointCloud : MonoBehaviour
 	{
 		print ("Graphics device: " + SystemInfo.graphicsDeviceVersion);
 		
-		MapOutputMode mom = OpenNIContext.Instance.Depth.MapOutputMode;
-		yRes = mom.YRes;
-		xRes = mom.XRes;
+        
+		MapOutputMode mom = OpenNIContext.Instance.Depth.MapOutputMode; //temp fix for mouse
+
+        yRes = mom.YRes;  // 480; 
+        xRes = mom.XRes;  // 640;
 		
 		maxPoints = xRes * yRes;
 		points = new Vector3[maxPoints];
 		
-		rawDepthMap = new short[(int)(mom.XRes * mom.YRes)];
+		rawDepthMap = new short[(int)(yRes * xRes)]; //(int)(mom.XRes * mom.YRes)];
 	}
 
 	void Update ()
@@ -51,8 +53,14 @@ public class PointCloud : MonoBehaviour
 
 	void ProcessPoints ()
 	{
+
 		DepthGenerator depth = OpenNIContext.Instance.Depth;
-		
+
+        if (depth == null)
+        {
+            print("depth is null");
+            return;
+        }
 		Marshal.Copy (depth.DepthMapPtr, rawDepthMap, 0, rawDepthMap.Length);
 		
 		int focalLength = (int)depth.GetIntProperty ("ZPD");
