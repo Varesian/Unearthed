@@ -1,11 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PointCloud\Calibrator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../TestGrounds/Assets/NewStuff/Scripts/OSCRippleListener.cs">
     <Files>
-      <File FileName="Assets\Scripts\ParticleAnimatorColorsList.cs" Line="16" Column="2" />
-      <File FileName="Assets\Scripts\PointCloud\MouseTriggersPointCloudCollision.cs" Line="4" Column="64" />
-      <File FileName="Assets\Scripts\PointCloud\PointCloudFadingCollider.cs" Line="59" Column="4" />
-      <File FileName="Assets\Scripts\PointCloud\Calibrator.cs" Line="57" Column="4" />
+      <File FileName="Assets/Scripts/PointCloud/PointCloudCamera.cs" Line="43" Column="1" />
+      <File FileName="../TestGrounds/Assets/NewStuff/Scripts/OSCRippleListener.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

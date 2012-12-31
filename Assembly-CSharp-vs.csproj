@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_5_2;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_0;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -37,17 +37,27 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BM\FireProducer.cs" />
      <Compile Include="Assets\Scripts\BM\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\BillieJean\ColorChanger.cs" />
+     <Compile Include="Assets\Scripts\Communications\CCChanges\FIREBALLS.cs" />
+     <Compile Include="Assets\Scripts\Communications\CCChanges\OSCColorChanger.cs" />
+     <Compile Include="Assets\Scripts\Communications\CCChanges\OSCObjectEnabler.cs" />
+     <Compile Include="Assets\Scripts\Communications\CCChanges\OSCRendererToggler.cs" />
+     <Compile Include="Assets\Scripts\Communications\MIDITrigger.cs" />
+     <Compile Include="Assets\Scripts\Communications\OSCCommunicator.cs" />
+     <Compile Include="Assets\Scripts\Communications\OSCMessageListener.cs" />
+     <Compile Include="Assets\Scripts\Communications\Osc.cs" />
+     <Compile Include="Assets\Scripts\Communications\UDPPacketIO.cs" />
      <Compile Include="Assets\Scripts\EmitOnCollision.cs" />
+     <Compile Include="Assets\Scripts\OSCTwitterListener.cs" />
      <Compile Include="Assets\Scripts\ParticleAnimatorColors.cs" />
      <Compile Include="Assets\Scripts\ParticleAnimatorColorsList.cs" />
      <Compile Include="Assets\Scripts\PointCloud\Calibrator.cs" />
@@ -80,17 +90,6 @@
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNISkeleton.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUserTracker.cs" />
      <Compile Include="Assets\Scripts\UnityOpenNI\OpenNIUsersRadar.cs" />
-     <Compile Include="Assets\Scripts\UnityParticleScripts\AttractParticlesByDistance.cs" />
-     <Compile Include="Assets\Scripts\UnityParticleScripts\DuringCollisionEmitParticles.cs" />
-     <Compile Include="Assets\Scripts\UnityParticleScripts\ParticleAttractor.cs" />
-     <Compile Include="Assets\Scripts\UnityParticleScripts\ParticlePositionRandomizer.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\ApplyRandomForce.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\ArrayMaker.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\ColorMorpher.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\LevelRotator.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\OnCollisionColorChange.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\OnCollisionTurnOnParticles.cs" />
-     <Compile Include="Assets\Scripts\UnityUtils\RespawnIfFalls.cs" />
      <None Include="Assets\Scripts\UnityOpenNI\changes.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
@@ -100,16 +99,16 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
- <Reference Include="Assembly-UnityScript-firstpass">
+ <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
- <Reference Include="OpenNI.Net">
+ <Reference Include="Assets\Libraries\OpenNI.Net">
  <HintPath>Assets\Libraries\OpenNI.Net.dll</HintPath>
  </Reference>
- <Reference Include="Tao.OpenGl">
+ <Reference Include="Assets\Libraries\Tao.OpenGl">
  <HintPath>Assets\Libraries\Tao.OpenGl.dll</HintPath>
  </Reference>
- <Reference Include="XnVNITE.net_1_3_1">
+ <Reference Include="Assets\Libraries\XnVNITE.net_1_3_1">
  <HintPath>Assets\Libraries\XnVNITE.net_1_3_1.dll</HintPath>
  </Reference>
   </ItemGroup>
