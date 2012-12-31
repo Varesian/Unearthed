@@ -4,7 +4,6 @@ using System.Collections;
 public class ColorChanger : MonoBehaviour {
 	public Color onColor1 = Color.yellow;
 	public Color offColor = Color.black;
-	public float colorRange = 0.2f;
 	public Color onColor2 = Color.green;
 	public float lerpColorSpeed = 0.5f;
 	
@@ -44,15 +43,5 @@ public class ColorChanger : MonoBehaviour {
 			renderer.material.color = newColor;
 		}
 	}
-	
-	/*
-	void OnPointCloudCollisionEnter() {
-		onColor.r *= Random.Range(1.0f - colorRange, 1.0f + colorRange);
-		onColor.g *= Random.Range(1.0f - colorRange, 1.0f + colorRange);
-		onColor.b *= Random.Range(1.0f - colorRange, 1.0f + colorRange);
-
-		//renderer.material.color = onColor;
-	}
-	*/
 	
 }
