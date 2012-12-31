@@ -64,7 +64,7 @@ public class PointCloudFadingCollider : MonoBehaviour {
 	void DecreaseActivation()
 	{
 		if (Activation > 0) {
-			Activation -= activationSpeed / 30.0f * Time.deltaTime;
+			Activation -= activationSpeed / 5.0f * Time.deltaTime;
 		}
 		if (isCollided && Activation < 0) {
 			Activation = 0;

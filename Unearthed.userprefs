@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BM\SceneSwitcher.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PointCloud\PointCloudFadingCollider.cs">
     <Files>
       <File FileName="Assets\Scripts\BM\SceneSwitcher.cs" Line="81" Column="16" />
+      <File FileName="Assets\Scripts\BorderColorChanger.cs" Line="8" Column="1" />
+      <File FileName="Assets\Scripts\BillieJean\ColorChanger.cs" Line="26" Column="27" />
+      <File FileName="Assets\Scripts\PointCloud\PointCloudFadingCollider.cs" Line="67" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
