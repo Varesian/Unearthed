@@ -4,16 +4,8 @@ using System.Collections;
 public class BorderColorChanger : MonoBehaviour {
 	
 	public float transparencyChangeSpeed = 0.5f;
-	private Color initialColor;
-	private float currentAlpha;
 	private float transparencyDirection = 1.0f;
-	private float nextAlpha;
-	
-	// Use this for initialization
-	void Start () {
-		initialColor = renderer.material.color;
-		currentAlpha = renderer.material.color.a;
-	}
+	private float nextAlpha = 0;
 	
 	// Update is called once per frame
 	void Update () {
