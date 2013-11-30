@@ -12,7 +12,7 @@ public class PointCloudFadingCollider : MonoBehaviour {
 	
 	public PointCloud pointCloud;
 	
-	bool isMouseActivated = false;
+	bool isMouseActivated = true;
 	
 	void Start () {
 		Activation = 0.0f;
@@ -64,7 +64,7 @@ public class PointCloudFadingCollider : MonoBehaviour {
 	void DecreaseActivation()
 	{
 		if (Activation > 0) {
-			Activation -= activationSpeed / 30.0f * Time.deltaTime;
+			Activation -= activationSpeed / 5.0f * Time.deltaTime;
 		}
 		if (isCollided && Activation < 0) {
 			Activation = 0;
