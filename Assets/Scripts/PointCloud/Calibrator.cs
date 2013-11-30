@@ -68,28 +68,28 @@ public class Calibrator : MonoBehaviour {
 	
     void AlterScale() {
 	if (Input.GetKeyDown(KeyCode.Z)) {
-	    transform.localScale = new Vector3(transform.localScale.x + transformScalar,
+	    transform.localScale = new Vector3(transform.localScale.x + scaleScalar,
 					       transform.localScale.y, transform.localScale.z);
 	}
 	if (Input.GetKeyDown(KeyCode.X)) {
-	    transform.localScale = new Vector3(transform.localScale.x - transformScalar,
+	    transform.localScale = new Vector3(transform.localScale.x - scaleScalar,
 					       transform.localScale.y, transform.localScale.z);
 	}
 	if (Input.GetKeyDown(KeyCode.C)) {
 	    transform.localScale = new Vector3(transform.localScale.x,
-					       transform.localScale.y + transformScalar, transform.localScale.z);
+					       transform.localScale.y + scaleScalar, transform.localScale.z);
 	}
 	if (Input.GetKeyDown(KeyCode.V)) {
 	    transform.localScale = new Vector3(transform.localScale.x,
-					       transform.localScale.y - transformScalar, transform.localScale.z);
+					       transform.localScale.y - scaleScalar, transform.localScale.z);
 	}
 	if (Input.GetKeyDown(KeyCode.B)) {
 	    transform.localScale = new Vector3(transform.localScale.x,
-					       transform.localScale.y, transform.localScale.z + transformScalar);
+					       transform.localScale.y, transform.localScale.z + scaleScalar);
 	}
 	if (Input.GetKeyDown(KeyCode.N)) {
 	    transform.localScale = new Vector3(transform.localScale.x,
-					       transform.localScale.y, transform.localScale.z - transformScalar);
+					       transform.localScale.y, transform.localScale.z - scaleScalar);
 	}		
     }
 }
